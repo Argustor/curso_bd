@@ -95,3 +95,18 @@ AGORA É A SUA VEZ!!!! Para que você aprenda, é muito importante que não copi
 12.	Exclua um único registro de uma tabela sem utilizar como filtro, a chave primária.
 13.	Escreva todos os comandos necessários para excluir o cliente com o id “38”.
 */
+
+-- 9.	Escreva o comando para alterar o valor de uma coluna de um único registro de uma tabela utilizando como filtro, o Primary Key.
+UPDATE cidade SET nome = 'BAURU' WHERE id = 2;
+
+-- 10.	Refaça o exercício anterior alterando os dados de mais que uma coluna de um único registro sem utilizar como filtro a chave primária. A escolha da coluna do filtro é muito importante – TOME CUIDADO.
+UPDATE cidade SET nome = 'PORTO ALEGRE', ativo = 'S';
+
+-- 11.	Alter o valor de uma coluna de todos os registros.
+UPDATE estado SET ativo = 'S';
+
+-- 12.	Exclua um único registro de uma tabela sem utilizar como filtro, a chave primária.
+UPDATE estado SET nome = 'MATO GROSSO' WHERE sigla = 'MT'
+
+-- 13.	Escreva todos os comandos necessários para excluir o cliente com o id “38”.
+DELETE FROM cliente WHERE cliente_id = 38;
