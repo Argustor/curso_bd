@@ -38,3 +38,31 @@ AGORA É A SUA VEZ!!!! Para que você aprenda, é muito importante que não copi
 9. Faça a inserção de 2 registros de cliente.  
 10. DESAFIO!!! Tente fazer todas as inserções necessárias para que se tenha um item de caixa. Na medida  que esteja digitando o código, tente associar os dados inseridos com o contexto real.
 */
+
+-- 5. Escreva o comando para inserir 3 registros da tabela estado com todas as colunas. 
+INSERT INTO estado (id,nome, sigla, ativo, data_cadastro) VALUES (1, 'RONDONIA', 'RO', 'S', '01-09-2022');
+INSERT INTO estado (id,nome, sigla, ativo, data_cadastro) VALUES (2, 'PARANA', 'PR', 'S', '01-09-2022');
+INSERT INTO estado (id,nome, sigla, ativo, data_cadastro) VALUES (3, 'RIO DE JANEIRO', 'RJ', 'S', '01-09-2022');
+
+-- 6. Escreva o comando para inserir 2 registros da tabela estado, definindo todos os dados, exceto a chave  primária que é auto incremento. 
+INSERT INTO estado (nome, sigla, ativo, data_cadastro) VALUES ('RONDONIA', 'RO', 'S', '01-09-2022');
+INSERT INTO estado (nome, sigla, ativo, data_cadastro) VALUES ('PARANA', 'PR', 'S', '01-09-2022');
+
+-- 7. Escreva o comando para inserir 2 registros da tabela estado, definindo somente os dados necessários. 
+INSERT INTO estado (nome, sigla) VALUES ('RONDÔNIA', 'RO');
+INSERT INTO estado (nome, sigla) VALUES ('PARANA', 'PR');
+
+-- 8. Escreva o comando para inserir registros da tabela cidade das 3 formas apresentadas nos exercícios  anteriores.  
+INSERT INTO cidade (id, nome, ativo, estado_id, data_cadastro) VALUES (1, 'PORTO VELHO', 'S', 1, '01-09-2022');
+INSERT INTO cidade (nome, ativo, estado_id, data_cadastro) VALUES ('ARIQUEMES', 'S', 1, '01-09-2022');
+INSERT INTO cidade (nome, estado_id) VALUES ('OURO PRETO', 1);
+
+-- 9. Faça a inserção de 2 registros de cliente.  
+INSERT INTO cliente (nome_completo, sexo, cidade_id, telefone, data_nascimento, cpf) VALUES ('RENATO AUGUSTO', 'M', 2, '40028922', '18-06-20001', '00000000000');
+INSERT INTO cliente (nome_completo, sexo, cidade_id, telefone, data_nascimento, cpf) VALUES ('JOÃO LENZI', 'M', 1, '2345678', '20-09-2003', '00000000000');
+  
+ -- 10. DESAFIO!!! Tente fazer todas as inserções necessárias para que se tenha um item de caixa. Na medida  que esteja digitando o código, tente associar os dados inseridos com o contexto real.
+
+
+
+
