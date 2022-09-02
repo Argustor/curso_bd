@@ -106,7 +106,7 @@ UPDATE cidade SET nome = 'PORTO ALEGRE', ativo = 'S';
 UPDATE estado SET ativo = 'S';
 
 -- 12.	Exclua um único registro de uma tabela sem utilizar como filtro, a chave primária.
-UPDATE estado SET nome = 'MATO GROSSO' WHERE sigla = 'MT'
+DELETE FROM estado WHERE nome = 'MATO GROSSO';
 
 -- 13.	Escreva todos os comandos necessários para excluir o cliente com o id “38”.
 DELETE FROM cliente WHERE cliente_id = 38;
