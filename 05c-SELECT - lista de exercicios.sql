@@ -84,3 +84,10 @@ AGORA É A SUA VEZ!!!! Para que você aprenda, é muito importante que não copi
 11.	Escreva o comando para seleccionar o nome de todos os registros da tabela cidade.  Por meio da definição do apelido, associe a tabela nas definições das colunas.  Redefine a descrição da coluna nome para nome da cidade.
 12.	DESAFIO!!! Elabore uma consulta bem legal de forma que utilize todos os conhecimentos que adquiriu nesta aula. Mentalize o resultado com o que está fazendo  e depois valide o resultado.
 */
+
+-- 6.	Escreva o comando para seleccionar todos os registros da tabela cidade com todas as colunas.
+SELECT * FROM cidade;
+
+-- 7.	Escreva o comando para seleccionar o nome de todos os registros da tabela cidade.
+SELECT nome FROM cidade;
+
